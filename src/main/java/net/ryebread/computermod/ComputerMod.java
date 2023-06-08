@@ -1,6 +1,7 @@
 package net.ryebread.computermod;
 
 import net.fabricmc.api.ModInitializer;
+import net.ryebread.computermod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +11,6 @@ public class ComputerMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-
+        ModItems.registerModItems();
     }
 }
